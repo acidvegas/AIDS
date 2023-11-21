@@ -1,0 +1,15 @@
+$TTL 604800
+@ IN SOA infra.hidden. admin.infra.hidden. (
+    2023111501 ; Serial
+    604800     ; Refresh
+    86400      ; Retry
+    2419200    ; Expire
+    604800 )   ; Negative Cache TTL
+
+; Name Servers
+@ IN NS infra.hidden.
+
+; Subdomains
+kibana  IN A 10.0.0.1
+pi      IN A 10.0.0.2
+brandon IN A 10.0.0.3

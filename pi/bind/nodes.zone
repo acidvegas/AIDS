@@ -1,0 +1,22 @@
+$TTL 604800
+@ IN SOA nodes.hidden. admin.nodes.hidden. (
+    2023111501 ; Serial
+    604800     ; Refresh
+    86400      ; Retry
+    2419200    ; Expire
+    604800 )   ; Negative Cache TTL
+
+; Name Servers
+@ IN NS nodes.hidden.
+
+; Round Robin for nodes.hidden
+@ IN A 10.0.0.1
+@ IN A 10.0.0.2
+@ IN A 10.0.0.3
+@ IN A 10.0.0.4
+
+; Subdomains
+W IN A 10.0.0.1
+X IN A 10.0.0.2
+Y IN A 10.0.0.3
+Z IN A 10.0.0.4
